@@ -33,29 +33,2978 @@
     const container = document.getElementById('deck-container');
     const jsonInput = {
   "initialViewState": {
-    "bearing": -27.36,
-    "latitude": 52.2323,
-    "longitude": -1.415,
-    "maxZoom": 15,
-    "minZoom": 5,
-    "pitch": 40.5,
-    "zoom": 6
+    "bearing": 0,
+    "latitude": 41.6488,
+    "longitude": -0.8773,
+    "pitch": 45,
+    "zoom": 13
   },
   "layers": [
     {
-      "@@type": "HexagonLayer",
-      "autoHighlight": true,
-      "coverage": 1,
-      "data": "https://raw.githubusercontent.com/uber-common/deck.gl-data/master/examples/3d-heatmap/heatmap-data.csv",
-      "elevationRange": [
-        0,
-        3000
-      ],
-      "elevationScale": 50,
+      "@@type": "PolygonLayer",
+      "data": "https://raw.githubusercontent.com/visgl/deck.gl-data/master/examples/geojson/vancouver-blocks.json",
+      "elevationScale": 5,
       "extruded": true,
+      "getElevation": "@@=properties.valuePerSqm",
+      "getFillColor": [
+        160,
+        160,
+        180
+      ],
+      "getPolygon": "@@=geometry.coordinates",
+      "id": "922361ea-4fcb-4792-9080-308810640e13",
+      "pickable": false
+    },
+    {
+      "@@type": "ColumnLayer",
+      "autoHighlight": true,
+      "data": [
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6515289535,
+          "lng": -0.9299326364
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6515356549,
+          "lng": -0.9304207985
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6515141729,
+          "lng": -0.9308955495
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6515061563,
+          "lng": -0.9312254612
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6514860522,
+          "lng": -0.9314695422
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6514565536,
+          "lng": -0.9316881422
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.651427055,
+          "lng": -0.9318799202
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6513894771,
+          "lng": -0.932056946
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6512982881,
+          "lng": -0.9324217264
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6512446143,
+          "lng": -0.932609481
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6512057211,
+          "lng": -0.9327382271
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6511414001,
+          "lng": -0.9329769437
+        },
+        {
+          "category": "Road works",
+          "color": [
+            255,
+            215,
+            0
+          ],
+          "height": 400,
+          "lat": 41.6185793458,
+          "lng": -0.9284426693
+        },
+        {
+          "category": "Road works",
+          "color": [
+            255,
+            215,
+            0
+          ],
+          "height": 400,
+          "lat": 41.6183392885,
+          "lng": -0.9286357884
+        },
+        {
+          "category": "Road works",
+          "color": [
+            255,
+            215,
+            0
+          ],
+          "height": 400,
+          "lat": 41.6181944767,
+          "lng": -0.9287658755
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6227314246,
+          "lng": -0.9225605849
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6230089973,
+          "lng": -0.9222601775
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6232182098,
+          "lng": -0.9220442597
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6232732228,
+          "lng": -0.9219517235
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.623271907,
+          "lng": -0.9218779628
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6232235984,
+          "lng": -0.9217291002
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6231860667,
+          "lng": -0.9216566805
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6231069306,
+          "lng": -0.9215078179
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.622742139,
+          "lng": -0.9209163908
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6562000157,
+          "lng": -0.9060904805
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6559599732,
+          "lng": -0.9042263452
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6568504367,
+          "lng": -0.9040399317
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6570006726,
+          "lng": -0.9048150901
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6571227272,
+          "lng": -0.9054132227
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6571575463,
+          "lng": -0.9057552044
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6571710105,
+          "lng": -0.9060100142
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6571710105,
+          "lng": -0.9064069812
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6571414519,
+          "lng": -0.9066537444
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6363704222,
+          "lng": -0.9041619722
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.636256472,
+          "lng": -0.9039608065
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.636234985,
+          "lng": -0.9039205734
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6361370715,
+          "lng": -0.9037301366
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6360915289,
+          "lng": -0.9036483292
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6360606451,
+          "lng": -0.9035920028
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6359560284,
+          "lng": -0.903389496
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6356462492,
+          "lng": -0.9027886812
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.654960841,
+          "lng": -0.9028476898
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6553309614,
+          "lng": -0.902760518
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6557561275,
+          "lng": -0.9026974861
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6528124099,
+          "lng": -0.9041284446
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6528995886,
+          "lng": -0.9038266961
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6530095638,
+          "lng": -0.9033948604
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6531060737,
+          "lng": -0.9029549781
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6532496172,
+          "lng": -0.9024252419
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6475472138,
+          "lng": -0.8939172749
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6474828266,
+          "lng": -0.8940312688
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6474614059,
+          "lng": -0.8940849129
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6474573347,
+          "lng": -0.8940956418
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6474211325,
+          "lng": -0.8941895191
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6470697568,
+          "lng": -0.8951054935
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6469893348,
+          "lng": -0.8953147058
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6467197572,
+          "lng": -0.8959745292
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6464300729,
+          "lng": -0.8967242066
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6462396634,
+          "lng": -0.8971949343
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6461403872,
+          "lng": -0.8974323098
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6458198838,
+          "lng": -0.898204786
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6454416914,
+          "lng": -0.8991516058
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.645385382,
+          "lng": -0.8992951039
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6452901132,
+          "lng": -0.8995056574
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6451399126,
+          "lng": -0.8998355691
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6451292019,
+          "lng": -0.8998543445
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6450889896,
+          "lng": -0.8999187175
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.636901519,
+          "lng": -0.89444567
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6369806382,
+          "lng": -0.8944429878
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6370919561,
+          "lng": -0.8944040958
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6370959653,
+          "lng": -0.894381297
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6371201457,
+          "lng": -0.8942485277
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6371952554,
+          "lng": -0.8938529019
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6372300852,
+          "lng": -0.8936718527
+        },
+        {
+          "category": "Road works",
+          "color": [
+            255,
+            215,
+            0
+          ],
+          "height": 400,
+          "lat": 41.6515034632,
+          "lng": -0.8935109202
+        },
+        {
+          "category": "Road works",
+          "color": [
+            255,
+            215,
+            0
+          ],
+          "height": 400,
+          "lat": 41.6517328127,
+          "lng": -0.8934787337
+        },
+        {
+          "category": "Road works",
+          "color": [
+            255,
+            215,
+            0
+          ],
+          "height": 400,
+          "lat": 41.6517717055,
+          "lng": -0.8934773926
+        },
+        {
+          "category": "Road works",
+          "color": [
+            255,
+            215,
+            0
+          ],
+          "height": 400,
+          "lat": 41.6518146066,
+          "lng": -0.8934787337
+        },
+        {
+          "category": "Road works",
+          "color": [
+            255,
+            215,
+            0
+          ],
+          "height": 400,
+          "lat": 41.6518548147,
+          "lng": -0.8934586171
+        },
+        {
+          "category": "Road works",
+          "color": [
+            255,
+            215,
+            0
+          ],
+          "height": 400,
+          "lat": 41.6518856909,
+          "lng": -0.8934371595
+        },
+        {
+          "category": "Road works",
+          "color": [
+            255,
+            215,
+            0
+          ],
+          "height": 400,
+          "lat": 41.651928592,
+          "lng": -0.8933741275
+        },
+        {
+          "category": "Road works",
+          "color": [
+            255,
+            215,
+            0
+          ],
+          "height": 400,
+          "lat": 41.651951389,
+          "lng": -0.8933231656
+        },
+        {
+          "category": "Road works",
+          "color": [
+            255,
+            215,
+            0
+          ],
+          "height": 400,
+          "lat": 41.6519902818,
+          "lng": -0.8932359938
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6378536987,
+          "lng": -0.8949096922
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6378617796,
+          "lng": -0.894817156
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6378630951,
+          "lng": -0.89468841
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6378443022,
+          "lng": -0.8942901019
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6378268875,
+          "lng": -0.8940138344
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6377973826,
+          "lng": -0.8937254969
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6377879862,
+          "lng": -0.8936101619
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.637783977,
+          "lng": -0.8935109202
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6377785897,
+          "lng": -0.8933660809
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6377732651,
+          "lng": -0.8931850318
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.637783977,
+          "lng": -0.8930308048
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6378027699,
+          "lng": -0.8928966943
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6378268875,
+          "lng": -0.8927666072
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6378523831,
+          "lng": -0.8926620011
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6379019963,
+          "lng": -0.8925211851
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6379476003,
+          "lng": -0.8924353544
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.637952925,
+          "lng": -0.8924259667
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6380066099,
+          "lng": -0.8923548881
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6380522138,
+          "lng": -0.8923012439
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6381273224,
+          "lng": -0.8922315065
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6382077555,
+          "lng": -0.8921765212
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6382774767,
+          "lng": -0.8921416525
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6383726933,
+          "lng": -0.8921108071
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6385524141,
+          "lng": -0.8920665506
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6386664229,
+          "lng": -0.8920383875
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6387388372,
+          "lng": -0.8920209531
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6388286659,
+          "lng": -0.8919766966
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6389185571,
+          "lng": -0.8919217114
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6389627822,
+          "lng": -0.8918667261
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6390378898,
+          "lng": -0.8917607788
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6390928892,
+          "lng": -0.8916508083
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6391237089,
+          "lng": -0.8916105751
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6391881046,
+          "lng": -0.8915515665
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6357950937,
+          "lng": -0.8925828759
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6357535601,
+          "lng": -0.8924957041
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6357334511,
+          "lng": -0.8924058501
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6357293792,
+          "lng": -0.8922462587
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6357039453,
+          "lng": -0.8920853261
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6356744395,
+          "lng": -0.8919860844
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6356422399,
+          "lng": -0.8919015948
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6355966343,
+          "lng": -0.8918211285
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6355537224,
+          "lng": -0.8917621199
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.635518829,
+          "lng": -0.8917352978
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6354678984,
+          "lng": -0.891673607
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6354222927,
+          "lng": -0.8916387383
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6353806962,
+          "lng": -0.8916105751
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6352908627,
+          "lng": -0.8915622954
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6351822354,
+          "lng": -0.8914912168
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6350950328,
+          "lng": -0.8914375726
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6420621013,
+          "lng": -0.8903915111
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6422069222,
+          "lng": -0.890441132
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6424027305,
+          "lng": -0.8904961173
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6425033278,
+          "lng": -0.8905256216
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6426293562,
+          "lng": -0.8905417148
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6434125806,
+          "lng": -0.8905752424
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6629095695,
+          "lng": -0.8889002029
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6623717989,
+          "lng": -0.8894473735
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6623315349,
+          "lng": -0.8894809012
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6622859481,
+          "lng": -0.8895224754
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6621947745,
+          "lng": -0.8896096472
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6620687218,
+          "lng": -0.8897303466
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6619439839,
+          "lng": -0.8898497049
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6618621401,
+          "lng": -0.889927489
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6615456599,
+          "lng": -0.8902413074
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6614356993,
+          "lng": -0.8903553013
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6612103921,
+          "lng": -0.8905899946
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6606404203,
+          "lng": -0.8911331419
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.660566653,
+          "lng": -0.8912082438
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.660208586,
+          "lng": -0.8915676598
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6601335031,
+          "lng": -0.8916441027
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6599564725,
+          "lng": -0.8918211285
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6598760039,
+          "lng": -0.8919270758
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6597794415,
+          "lng": -0.8920759384
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6595984021,
+          "lng": -0.8923468415
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6477725062,
+          "lng": -0.8806148593
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.64781541,
+          "lng": -0.8807154421
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6478744731,
+          "lng": -0.8808602814
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6480179656,
+          "lng": -0.8812746827
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6481198695,
+          "lng": -0.8815630201
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6482378698,
+          "lng": -0.8818768386
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.64829687,
+          "lng": -0.882061911
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6483223615,
+          "lng": -0.8821973626
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6483317564,
+          "lng": -0.8822992865
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6483317564,
+          "lng": -0.8824012105
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6483250547,
+          "lng": -0.8825594608
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.64829687,
+          "lng": -0.8828866903
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6482754495,
+          "lng": -0.8829510633
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.648249958,
+          "lng": -0.883023483
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6481667815,
+          "lng": -0.8832139198
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6481037728,
+          "lng": -0.8833668057
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6479240786,
+          "lng": -0.8837651137
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6478409017,
+          "lng": -0.8839501862
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6477644891,
+          "lng": -0.8841285531
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6474064136,
+          "lng": -0.8849372391
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6473366396,
+          "lng": -0.8850954894
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.647323236,
+          "lng": -0.885141087
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6472977441,
+          "lng": -0.8852591042
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6472387431,
+          "lng": -0.8854803864
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6506625919,
+          "lng": -0.8764185433
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6506303998,
+          "lng": -0.8763474647
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6506116107,
+          "lng": -0.8763099138
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6505982077,
+          "lng": -0.8762897972
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6505781033,
+          "lng": -0.8762696807
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.650441318,
+          "lng": -0.8761570279
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6501328611,
+          "lng": -0.8761489812
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6498431921,
+          "lng": -0.876132888
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6497734208,
+          "lng": -0.8761637334
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6497104137,
+          "lng": -0.8761610512
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6495803281,
+          "lng": -0.876146299
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6494287596,
+          "lng": -0.8761194769
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6493617437,
+          "lng": -0.8760510806
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6493147699,
+          "lng": -0.8760229174
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6493147699,
+          "lng": -0.8760229174
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6493617437,
+          "lng": -0.8760510806
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6494422254,
+          "lng": -0.8760255996
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6495830213,
+          "lng": -0.8760470573
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6496876158,
+          "lng": -0.8760631506
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6497815003,
+          "lng": -0.8760859493
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6498431921,
+          "lng": -0.876132888
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6501328611,
+          "lng": -0.8761489812
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.650441318,
+          "lng": -0.8761570279
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6505660156,
+          "lng": -0.8761369113
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6506089802,
+          "lng": -0.876132888
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6506518821,
+          "lng": -0.8761288647
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6506907756,
+          "lng": -0.8761127714
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6507940531,
+          "lng": -0.8760390107
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6886775268,
+          "lng": -0.8714564566
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6887526389,
+          "lng": -0.8713572148
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6887781145,
+          "lng": -0.8713089351
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.688795578,
+          "lng": -0.8712606553
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6888062815,
+          "lng": -0.8712231044
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6888116645,
+          "lng": -0.8711868946
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.688814356,
+          "lng": -0.8711426381
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6888116645,
+          "lng": -0.8710755829
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6888076585,
+          "lng": -0.8710447375
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6887968925,
+          "lng": -0.8710098688
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6887781145,
+          "lng": -0.8709682945
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6887459414,
+          "lng": -0.8709213559
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6887097624,
+          "lng": -0.8708824638
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6886789038,
+          "lng": -0.8708569829
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6885729329,
+          "lng": -0.8707926098
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6445082896,
+          "lng": -0.870371503
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6444532947,
+          "lng": -0.8705565754
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6443594025,
+          "lng": -0.8708931927
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6443044076,
+          "lng": -0.8710956995
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6442494126,
+          "lng": -0.8712941829
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6442266128,
+          "lng": -0.8713773314
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6444519167,
+          "lng": -0.8715717916
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6442266128,
+          "lng": -0.8713773314
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6430357521,
+          "lng": -0.8702923779
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6519822652,
+          "lng": -0.8677979235
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6525387859,
+          "lng": -0.8674988572
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6525173669,
+          "lng": -0.8677590314
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6520425771,
+          "lng": -0.8680326168
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6837677551,
+          "lng": -0.866894019
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6838133892,
+          "lng": -0.8669771675
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6838951425,
+          "lng": -0.8670884792
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6839944231,
+          "lng": -0.8672453884
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6841017161,
+          "lng": -0.8674371664
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6841633751,
+          "lng": -0.8675846879
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6842090089,
+          "lng": -0.8677603726
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6842760512,
+          "lng": -0.8680084769
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6843337037,
+          "lng": -0.8682324413
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6843819665,
+          "lng": -0.8684094671
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6844182106,
+          "lng": -0.8685717408
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6844597754,
+          "lng": -0.8687071923
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6845281946,
+          "lng": -0.8688399617
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6846234054,
+          "lng": -0.8690089408
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6847306973,
+          "lng": -0.8691913311
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6848352974,
+          "lng": -0.8694675986
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6849211182,
+          "lng": -0.8697063152
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6849492869,
+          "lng": -0.869793487
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6850163284,
+          "lng": -0.8700000171
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6851062177,
+          "lng": -0.8702749435
+        },
+        {
+          "category": "Traffic jam",
+          "color": [
+            255,
+            140,
+            0
+          ],
+          "height": 500,
+          "lat": 41.6852443065,
+          "lng": -0.870666546
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6586582543,
+          "lng": -0.8614933912
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6587829986,
+          "lng": -0.8614840035
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6589331674,
+          "lng": -0.8614840035
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6592859186,
+          "lng": -0.8614504758
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6596265193,
+          "lng": -0.8614156071
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6603131633,
+          "lng": -0.8613445286
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.660545174,
+          "lng": -0.8613297764
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6608590291,
+          "lng": -0.8613016132
+        },
+        {
+          "category": "Road closed",
+          "color": [
+            180,
+            0,
+            255
+          ],
+          "height": 550,
+          "lat": 41.6608992315,
+          "lng": -0.861298931
+        }
+      ],
+      "elevationScale": 1,
+      "extruded": true,
+      "getElevation": "@@=height",
+      "getFillColor": "@@=color",
       "getPosition": "@@=[lng, lat]",
-      "id": "64503683-53af-4e89-8d69-8012c09907d0",
-      "pickable": true
+      "id": "6487bd5e-7b8d-4a87-a70e-6dac754e2d12",
+      "pickable": true,
+      "radius": 40
     }
   ],
   "mapProvider": "carto",
@@ -67,7 +3016,7 @@
     }
   ]
 };
-    const tooltip = true;
+    const tooltip = {'text': 'Incident: {category}'};
     const customLibraries = null;
     const configuration = null;
 
