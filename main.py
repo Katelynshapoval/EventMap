@@ -11,7 +11,18 @@ url = "https://api.tomtom.com/traffic/services/5/incidentDetails"
 
 params = {
     "key": API_KEY,
-    "bbox": "-0.95,41.60,-0.80,41.72",
+    # Zaragoza
+    # "bbox": "-0.95,41.60,-0.80,41.72",
+
+    # London
+    # "bbox": "-0.563,51.261,0.280,51.686",
+
+    # Madrid
+    # "bbox": "-3.80,40.34,-3.60,40.50",
+
+    # New York
+    "bbox": "-74.05,40.68,-73.90,40.85",
+
     "fields": "{incidents{type,geometry{type,coordinates},properties{iconCategory}}}",
     "language": "en-GB",
     "timeValidityFilter": "present"
@@ -21,6 +32,7 @@ response = requests.get(url, params=params)
 data = response.json()
 
 points = []
+lines = []
 
 # Category names
 category_names = {
@@ -84,15 +96,13 @@ if "incidents" in data:
                 "color": color
             })
 
+
         elif geo_type == "LineString":
-            for coord in coords:
-                points.append({
-                    "lng": coord[0],
-                    "lat": coord[1],
-                    "category": category_name,
-                    "height": height,
-                    "color": color
-                })
+            lines.append({
+                "path": coords,
+                "category": category_name,
+                "color": color
+            })
 
 print("Incidents:", len(points))
 
@@ -110,6 +120,16 @@ incident_layer = pdk.Layer(
     auto_highlight=True
 )
 
+line_layer = pdk.Layer(
+    "PathLayer",
+    data=lines,
+    get_path="path",
+    get_color="color",
+    width_scale=10,
+    width_min_pixels=3,
+    pickable=True
+)
+
 # 3D buildings layer
 buildings = pdk.Layer(
     "PolygonLayer",
@@ -124,15 +144,32 @@ buildings = pdk.Layer(
 
 # Camera
 view_state = pdk.ViewState(
-    longitude=-0.8773,
-    latitude=41.6488,
-    zoom=13,
+    # Zaragoza
+    # longitude=-0.8773,
+    # latitude=41.6488,
+    # zoom=13,
+
+    # London
+    # longitude=-0.1276,
+    # latitude=51.5072,
+    # zoom=12,
+
+    # Madrid
+    # longitude=-3.7038,
+    # latitude=40.4168,
+    # zoom=12,
+
+    # New York
+    longitude=-74.0060,
+    latitude=40.7128,
+    zoom=11,
+
     pitch=45,
     bearing=0
 )
 
 deck = pdk.Deck(
-    layers=[buildings, incident_layer],
+    layers=[buildings, incident_layer, line_layer],
     initial_view_state=view_state,
     tooltip={"text": "Incident: {category}"}
 )
