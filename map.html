@@ -33,57 +33,29 @@
     const container = document.getElementById('deck-container');
     const jsonInput = {
   "initialViewState": {
-    "latitude": 41.6488,
-    "longitude": -0.8891,
-    "pitch": 45,
-    "zoom": 14
+    "bearing": -27.36,
+    "latitude": 52.2323,
+    "longitude": -1.415,
+    "maxZoom": 15,
+    "minZoom": 5,
+    "pitch": 40.5,
+    "zoom": 6
   },
   "layers": [
     {
-      "@@type": "GeoJsonLayer",
-      "data": {
-        "features": [
-          {
-            "geometry": {
-              "coordinates": [
-                [
-                  [
-                    -0.89,
-                    41.64
-                  ],
-                  [
-                    -0.88,
-                    41.64
-                  ],
-                  [
-                    -0.88,
-                    41.65
-                  ],
-                  [
-                    -0.89,
-                    41.65
-                  ],
-                  [
-                    -0.89,
-                    41.64
-                  ]
-                ]
-              ],
-              "type": "Polygon"
-            },
-            "type": "Feature"
-          }
-        ],
-        "type": "FeatureCollection"
-      },
-      "extruded": true,
-      "getElevation": 100,
-      "getFillColor": [
-        255,
+      "@@type": "HexagonLayer",
+      "autoHighlight": true,
+      "coverage": 1,
+      "data": "https://raw.githubusercontent.com/uber-common/deck.gl-data/master/examples/3d-heatmap/heatmap-data.csv",
+      "elevationRange": [
         0,
-        0
+        3000
       ],
-      "id": "a8b40eb2-cb8f-498f-aafa-89a5cd30e35b"
+      "elevationScale": 50,
+      "extruded": true,
+      "getPosition": "@@=[lng, lat]",
+      "id": "835418fb-40ae-4ed5-af61-2cca31309b88",
+      "pickable": true
     }
   ],
   "mapProvider": "carto",
